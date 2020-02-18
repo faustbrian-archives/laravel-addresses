@@ -1,13 +1,13 @@
 # Laravel Addresses
 
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kodekeep/laravel-addresses/run-tests?label=tests)](https://github.com/kodekeep/laravel-addresses/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Code Coverage](https://badgen.now.sh/codecov/c/github/kodekeep/laravel-addresses)](https://codecov.io/gh/kodekeep/laravel-addresses)
-[![Minimum PHP Version](https://badgen.net/packagist/php/kodekeep/laravel-addresses)](https://packagist.org/packages/kodekeep/laravel-addresses)
 [![Latest Version](https://badgen.net/packagist/v/kodekeep/laravel-addresses)](https://packagist.org/packages/kodekeep/laravel-addresses)
+[![Software License](https://badgen.net/packagist/license/kodekeep/laravel-addresses)](https://packagist.org/packages/kodekeep/laravel-addresses)
+[![Build Status](https://img.shields.io/github/workflow/status/kodekeep/laravel-addresses/run-tests?label=tests)](https://github.com/kodekeep/laravel-addresses/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Coverage Status](https://badgen.net/codeclimate/coverage/kodekeep/laravel-addresses)](https://codeclimate.com/github/kodekeep/laravel-addresses)
+[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/laravel-addresses)](https://codeclimate.com/github/kodekeep/laravel-addresses)
 [![Total Downloads](https://badgen.net/packagist/dt/kodekeep/laravel-addresses)](https://packagist.org/packages/kodekeep/laravel-addresses)
-[![License](https://badgen.net/packagist/license/kodekeep/laravel-addresses)](https://packagist.org/packages/kodekeep/laravel-addresses)
 
-> Attach Addresses to Laravel Eloquent Models.
+This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides address associations for Laravel Eloquent Models.
 
 ## Installation
 
@@ -17,7 +17,7 @@ composer require kodekeep/laravel-addresses
 
 ## Usage
 
-See our [tests](https://github.com/kodekeep/laravel-addresses/tree/master/tests/Unit) for usage examples.
+See our [tests](https://github.com/kodekeep/laravel-addresses/tree/master/tests) for usage examples.
 
 ## Testing
 
@@ -41,6 +41,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 This project exists thanks to all the people who [contribute](../../contributors).
 
+## Support Us
+
+We invest a lot of resources into creating and maintaining our packages. You can support us and the development through [GitHub Sponsors](https://github.com/sponsors/faustbrian).
+
 ## License
 
-Mozilla Public License Version 2.0 (MPL-2.0). Please see [License File](LICENSE.md) for more information.
+Laravel Addresses is an open-sourced software licensed under the [MPL-2.0](LICENSE.md).
