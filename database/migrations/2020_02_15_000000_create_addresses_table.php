@@ -13,13 +13,14 @@ declare(strict_types=1);
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Schema;
 
 class CreateAddressesTable extends Migration
 {
     public function up()
     {
-        Schema::create('addresses', function (Blueprint $table) {
+        Schema::create(Config::get('addresses.tables.addresses'), function (Blueprint $table) {
             $table->increments('id');
             $table->morphs('addressable');
             $table->string('type');
@@ -36,6 +37,6 @@ class CreateAddressesTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('addresses');
+        Schema::dropIfExists(Config::get('addresses.tables.addresses'));
     }
 }

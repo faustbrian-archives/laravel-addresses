@@ -14,12 +14,12 @@ declare(strict_types=1);
 namespace KodeKeep\Addresses\Concerns;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use KodeKeep\Addresses\Models\Address;
+use Illuminate\Support\Facades\Config;
 
 trait HasAddresses
 {
     public function addresses(): MorphMany
     {
-        return $this->morphMany(Address::class, 'addressable');
+        return $this->morphMany(Config::get('addresses.models.address'), 'addressable');
     }
 }

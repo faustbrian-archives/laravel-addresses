@@ -15,6 +15,7 @@ namespace KodeKeep\Addresses\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Facades\Config;
 
 class Address extends Model
 {
@@ -32,5 +33,10 @@ class Address extends Model
     public function addressable(): MorphTo
     {
         return $this->morphTo('addressable');
+    }
+
+    public function getTable(): string
+    {
+        return Config::get('addresses.tables.addresses');
     }
 }

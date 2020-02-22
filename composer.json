@@ -49,11 +49,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "KodeKeep\\Addresses\\AddressesServiceProvider"
-            ],
-            "aliases": {
-                "Addresses": "KodeKeep\\Addresses\\AddressesFacade"
-            }
+                "KodeKeep\\Addresses\\Providers\\AddressesServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
