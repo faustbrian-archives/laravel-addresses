@@ -25,8 +25,6 @@ class AddressesServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
-            $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
-
             $this->publishes([
                 __DIR__.'/../../config/addresses.php' => $this->app->configPath('addresses.php'),
             ], 'config');
