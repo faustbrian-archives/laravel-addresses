@@ -18,6 +18,17 @@ use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase
 {
+    public function setUp(): void
+    {
+        parent::setUp();
+
+        $this->loadLaravelMigrations(['--database' => 'testbench']);
+
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        $this->artisan('migrate', ['--database' => 'testbench'])->run();
+    }
+
     protected function getEnvironmentSetUp($app): void
     {
         $app['config']->set('database.default', 'testbench');
