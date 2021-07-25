@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Addresses.
  *
- * (c) KodeKeep <hello@kodekeep.com>
+ * (c) Konceiver <info@konceiver.dev>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace KodeKeep\Addresses\Tests;
+namespace Konceiver\Addresses\Tests;
 
-use KodeKeep\Addresses\Providers\AddressesServiceProvider;
+use Konceiver\Addresses\Providers\AddressesServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase

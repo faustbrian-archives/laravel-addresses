@@ -5,20 +5,20 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Addresses.
  *
- * (c) KodeKeep <hello@kodekeep.com>
+ * (c) Konceiver <info@konceiver.dev>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace KodeKeep\Addresses\Tests\Unit\Models;
+namespace Konceiver\Addresses\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use KodeKeep\Addresses\Tests\TestCase;
-use KodeKeep\Addresses\Tests\Unit\ClassThatHasAddresses;
+use Konceiver\Addresses\Tests\TestCase;
+use Konceiver\Addresses\Tests\Unit\ClassThatHasAddresses;
 
 /**
- * @covers \KodeKeep\Addresses\Models\Address
+ * @covers \Konceiver\Addresses\Models\Address
  */
 class AddressTest extends TestCase
 {
